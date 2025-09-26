@@ -20,12 +20,12 @@ const items = [
 
 export default function Menu() {
     return (
-        <Carousel className="max-w-sm max-h-96">
+        <Carousel className="max-w-96">
             <CarouselContent>
                 {
                     items.map((item, index) => (
                         <CarouselItem key={index}>
-                            <div className="p-1">
+                            <div className="p-0">
                                 <Card className="size-2/3 gap-1">
                                     <CardHeader className="flex justify-center items-center">
                                         <div className="w-2/4 h-3/4 object-cover">
@@ -33,7 +33,7 @@ export default function Menu() {
                                         </div>
                                     </CardHeader>
                                     <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
-                                        <span className="text-xl font-semibold">{item.title}</span>
+                                        <span className="text-xl font-semibold text-center">{item.title}</span>
                                         <div className="divider"></div>
                                         <p className="text-sm font-light">{item.desc}</p>
                                     </CardContent>
